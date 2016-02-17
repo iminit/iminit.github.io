@@ -8,6 +8,8 @@
   <title>iminit</title>
   <meta name="author" content="iminit">
   
+  <meta name="description" content="Walk steps step by step">
+  
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -219,18 +221,56 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-02-16T05:46:41.000Z"><a href="/2016/02/16/happy/">2016-02-16</a></time>
+        <time datetime="2016-02-17T11:11:46.000Z"><a href="/coding/help/">2016-02-17</a></time>
       
       
   
-    <h1 class="title"><a href="/2016/02/16/happy/">Hello Wrold</a></h1>
+    <h1 class="title"><a href="/coding/help/">一分钟入门markdown</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <h1 id="新年快乐"><a href="#新年快乐" class="headerlink" title="新年快乐"></a>新年快乐</h1><pre><code>Happy new Year
-</code></pre>
+        <h1 id="markdown-简明语法"><a href="#markdown-简明语法" class="headerlink" title="markdown 简明语法"></a>markdown 简明语法</h1><h2 id="基本符号"><a href="#基本符号" class="headerlink" title="基本符号"></a>基本符号</h2><ul>
+<li>*,-,+ 3个符号效果都一样，这3个符号被称为 Markdown符号</li>
+<li>空白行表示另起一个段落</li>
+<li>`是表示inline代码，tab是用来标记 代码段，分别对应html的code，pre标签</li>
+</ul>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><ul>
+<li>单一段落( &lt; p &gt;) 用一个空白行</li>
+<li>连续两个空格 会变成一个 <br></li>
+<li>连续3个符号，然后是空行，表示 hr横线</li>
+</ul>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><ul>
+<li>生成h1–h6,在文字前面加上 1–6个# 来实现</li>
+<li>文字加粗是通过 文字左右各两个符号</li>
+</ul>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ul>
+<li>在第一行加上 “&gt;”和一个空格，表示代码引用，还可以嵌套</li>
+</ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>这个是markdown文件的主要表示方式，主题要点化</p>
+<ul>
+<li>使用*,+,-加上一个空格来表示</li>
+<li>可以支持嵌套</li>
+<li>有序列表用 数字+英文点+空格来表示</li>
+<li>列表内容很长，不需要手工输入换行符，css控制段落的宽度，会自动的缩放的</li>
+</ul>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><ul>
+<li>直接写 [锚文本] (u rl”可选的title”)</li>
+<li>引用 先定义 [ref_name]:u rl，然后在需要写入url的地方， 这样使用[锚文本][r ef_name]，通常的ref_name一般用数字表示，这样显得专业</li>
+<li>简写url：用尖括号包裹url  这样生成的url锚文本就是url本身</li>
+</ul>
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><ul>
+<li>一行表示: ![a lt_text] url “可选的title”)</li>
+<li>引用表示法: ![a lt_text][id],预先定义 [id]:url “可选title”</li>
+<li>直接使用<img>标签，这样可以指定图片的大小尺寸</li>
+</ul>
+<h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><ul>
+<li>用\来转义，表示文本中的markdown符号</li>
+<li>可以在文本种直接使用html标签，但是要注意在使用的时候，前后加上空行</li>
+<li>文本前后各加一个符号，表示斜体</li>
+</ul>
+
       
     </div>
     <footer>
@@ -264,11 +304,11 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-02-16T05:44:35.097Z"><a href="/2016/02/16/hello-world/">2016-02-16</a></time>
+        <time datetime="2016-02-17T11:10:09.279Z"><a href="/uncategorized/hello-world/">2016-02-17</a></time>
       
       
   
-    <h1 class="title"><a href="/2016/02/16/hello-world/">Hello World</a></h1>
+    <h1 class="title"><a href="/uncategorized/hello-world/">Hello World</a></h1>
   
 
     </header>
@@ -314,6 +354,31 @@
 </div>
 
   
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/coding/">coding</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">订阅</h3>
+  <ul class="entry">
+  
+  <script type="text/javascript" src="http://china-addthis.googlecode.com/svn/trunk/addfeed.js" charset="UTF-8"></script><span class="addfeed_cn"><a href="http://zippera.github.io/atom.xml" i="0|3" title="订阅我吧"><img src="http://addfeed.cn/images/f4.gif" alt="分享家:Addfeed" align="absmiddle" /></a></span>
+
+  
+  </ul>
+</div>
+
+  
+
 
   <div class="widget tag">
 <h3 class="title">Introduction</h3>
@@ -325,7 +390,14 @@
 
 
 
-  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=2&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=5794060581&verifier=d5702a0b&dpc=1"></iframe>
+  
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
+</ul>
+</div>
 </aside>
     <div class="clearfix"></div>
   </div>
