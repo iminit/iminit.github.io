@@ -1,27 +1,143 @@
----
-layout: null
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
-  <title><![CDATA[{{ site.title | cdata_escape }}]]></title>
-  <link href="{{ site.url }}/atom.xml" rel="self"/>
-  <link href="{{ site.url }}/"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ site.url }}/</id>
+  <title>iminit</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://iminit.github.com/"/>
+  <updated>2016-03-04T15:04:23.984Z</updated>
+  <id>http://iminit.github.com/</id>
+  
   <author>
-    <name><![CDATA[{{ site.author | strip_html }}]]></name>
-    {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+    <name>iminit</name>
+    <email>iminit@126.com</email>
   </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
-
-  {% for post in site.posts limit: 20 %}
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
   <entry>
-    <title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
-    <link href="{{ site.url }}{{ post.url }}"/>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}{{ post.id }}</id>
-    <content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content>
+    <title>NexT 精于心，简于形</title>
+    <link href="http://iminit.github.com/coding/README/"/>
+    <id>http://iminit.github.com/coding/README/</id>
+    <published>2016-03-04T15:04:23.984Z</published>
+    <updated>2016-03-04T15:04:23.984Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;NexT&quot;&gt;&lt;a href=&quot;#NexT&quot; class=&quot;headerlink&quot; title=&quot;NexT&quot;&gt;&lt;/a&gt;NexT&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;精于心，简于形&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://notes.iissnan.com&quot; target=&quot;_blank&quot;&gt;在线预览 Preview&lt;/a&gt; | &lt;a href=&quot;http://theme-next.iissnan.com&quot; target=&quot;_blank&quot;&gt;NexT 使用文档&lt;/a&gt; |  &lt;a href=&quot;README.en.md&quot;&gt;English Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gitter.im/iissnan/hexo-theme-next?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://badges.gitter.im/Join%20Chat.svg&quot; alt=&quot;Join the chat at https://gitter.im/iissnan/hexo-theme-next&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://iissnan.com/nexus/next/next-schemes.jpg&quot; alt=&quot;NexT Schemes&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;浏览器支持-Browser-support&quot;&gt;&lt;a href=&quot;#浏览器支持-Browser-support&quot; class=&quot;headerlink&quot; title=&quot;浏览器支持 Browser support&quot;&gt;&lt;/a&gt;浏览器支持 Browser support&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://iissnan.com/nexus/next/browser-support.png&quot; alt=&quot;Browser support&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;贡献-Contributing&quot;&gt;&lt;a href=&quot;#贡献-Contributing&quot; class=&quot;headerlink&quot; title=&quot;贡献 Contributing&quot;&gt;&lt;/a&gt;贡献 Contributing&lt;/h2&gt;&lt;p&gt;接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的&lt;code&gt;Pull Request&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Any types of contribution are welcome. Thanks.&lt;/p&gt;
+&lt;h2 id=&quot;开发-Development&quot;&gt;&lt;a href=&quot;#开发-Development&quot; class=&quot;headerlink&quot; title=&quot;开发 Development&quot;&gt;&lt;/a&gt;开发 Development&lt;/h2&gt;&lt;p&gt;NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。&lt;/p&gt;
+&lt;p&gt;NexT is built for easily use with elegant appearance. First things first, always keep things simple.&lt;/p&gt;
+&lt;h2 id=&quot;开发历史-Changelog&quot;&gt;&lt;a href=&quot;#开发历史-Changelog&quot; class=&quot;headerlink&quot; title=&quot;开发历史 Changelog&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/wiki/Changelog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;开发历史 Changelog&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://hexo.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://img.shields.io/badge/Hexo-2.4+-2BAF2B.svg?style=flat-square&quot; alt=&quot;hexo-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://bower.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://img.shields.io/badge/Bower-*-2BAF2B.svg?style=flat-square&quot; alt=&quot;bower-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://jquery.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/jquery-2.1-2BAF2B.svg?style=flat-square&quot; alt=&quot;jquery-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://julian.com/research/velocity/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Velocity-1.2-2BAF2B.svg?style=flat-square&quot; alt=&quot;velocity-image&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;NexT&quot;&gt;&lt;a href=&quot;#NexT&quot; class=&quot;headerlink&quot; title=&quot;NexT&quot;&gt;&lt;/a&gt;NexT&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;精于心，简于形&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://note
+    
+    </summary>
+    
+      <category term="coding" scheme="http://iminit.github.com/categories/coding/"/>
+    
+    
+      <category term="markdown" scheme="http://iminit.github.com/tags/markdown/"/>
+    
   </entry>
-  {% endfor %}
+  
+  <entry>
+    <title>一分钟入门markdown</title>
+    <link href="http://iminit.github.com/coding/help/"/>
+    <id>http://iminit.github.com/coding/help/</id>
+    <published>2016-02-18T04:05:43.667Z</published>
+    <updated>2016-02-18T04:05:43.667Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;markdown-简明语法&quot;&gt;&lt;a href=&quot;#markdown-简明语法&quot; class=&quot;headerlink&quot; title=&quot;markdown 简明语法&quot;&gt;&lt;/a&gt;markdown 简明语法&lt;/h1&gt;&lt;h2 id=&quot;基本符号&quot;&gt;&lt;a href=&quot;#基本符号&quot; class=&quot;headerlink&quot; title=&quot;基本符号&quot;&gt;&lt;/a&gt;基本符号&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;*,-,+ 3个符号效果都一样，这3个符号被称为 Markdown符号&lt;/li&gt;
+&lt;li&gt;空白行表示另起一个段落&lt;/li&gt;
+&lt;li&gt;`是表示inline代码，tab是用来标记 代码段，分别对应html的code，pre标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;换行&quot;&gt;&lt;a href=&quot;#换行&quot; class=&quot;headerlink&quot; title=&quot;换行&quot;&gt;&lt;/a&gt;换行&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;单一段落( &amp;lt; p &amp;gt;) 用一个空白行&lt;/li&gt;
+&lt;li&gt;连续两个空格 会变成一个 &lt;br&gt;&lt;/li&gt;
+&lt;li&gt;连续3个符号，然后是空行，表示 hr横线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;生成h1–h6,在文字前面加上 1–6个# 来实现&lt;/li&gt;
+&lt;li&gt;文字加粗是通过 文字左右各两个符号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;引用&quot;&gt;&lt;a href=&quot;#引用&quot; class=&quot;headerlink&quot; title=&quot;引用&quot;&gt;&lt;/a&gt;引用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;在第一行加上 “&amp;gt;”和一个空格，表示代码引用，还可以嵌套&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h2&gt;&lt;p&gt;这个是markdown文件的主要表示方式，主题要点化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用*,+,-加上一个空格来表示&lt;/li&gt;
+&lt;li&gt;可以支持嵌套&lt;/li&gt;
+&lt;li&gt;有序列表用 数字+英文点+空格来表示&lt;/li&gt;
+&lt;li&gt;列表内容很长，不需要手工输入换行符，css控制段落的宽度，会自动的缩放的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;直接写 [锚文本] (u rl”可选的title”)&lt;/li&gt;
+&lt;li&gt;引用 先定义 [ref_name]:u rl，然后在需要写入url的地方， 这样使用[锚文本][r ef_name]，通常的ref_name一般用数字表示，这样显得专业&lt;/li&gt;
+&lt;li&gt;简写url：用尖括号包裹url  这样生成的url锚文本就是url本身&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;插入图片&quot;&gt;&lt;a href=&quot;#插入图片&quot; class=&quot;headerlink&quot; title=&quot;插入图片&quot;&gt;&lt;/a&gt;插入图片&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;一行表示: ![a lt_text] url “可选的title”)&lt;/li&gt;
+&lt;li&gt;引用表示法: ![a lt_text][id],预先定义 [id]:url “可选title”&lt;/li&gt;
+&lt;li&gt;直接使用&lt;img&gt;标签，这样可以指定图片的大小尺寸&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;特殊符号&quot;&gt;&lt;a href=&quot;#特殊符号&quot; class=&quot;headerlink&quot; title=&quot;特殊符号&quot;&gt;&lt;/a&gt;特殊符号&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用\来转义，表示文本中的markdown符号&lt;/li&gt;
+&lt;li&gt;可以在文本种直接使用html标签，但是要注意在使用的时候，前后加上空行&lt;/li&gt;
+&lt;li&gt;文本前后各加一个符号，表示斜体&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;markdown-简明语法&quot;&gt;&lt;a href=&quot;#markdown-简明语法&quot; class=&quot;headerlink&quot; title=&quot;markdown 简明语法&quot;&gt;&lt;/a&gt;markdown 简明语法&lt;/h1&gt;&lt;h2 id=&quot;基本符号&quot;&gt;&lt;a href=&quot;#基本符号&quot;
+    
+    </summary>
+    
+      <category term="coding" scheme="http://iminit.github.com/categories/coding/"/>
+    
+    
+      <category term="markdown" scheme="http://iminit.github.com/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://iminit.github.com/default/hello-world/"/>
+    <id>http://iminit.github.com/default/hello-world/</id>
+    <published>2016-02-17T11:10:09.279Z</published>
+    <updated>2016-02-16T05:44:35.097Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;http://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io
+    
+    </summary>
+    
+    
+  </entry>
+  
 </feed>
