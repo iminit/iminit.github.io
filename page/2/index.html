@@ -62,7 +62,7 @@
 <meta name="description" content="Walk steps step by step">
 <meta property="og:type" content="website">
 <meta property="og:title" content="iminit">
-<meta property="og:url" content="http://iminit.github.com/archives/2016/03/index.html">
+<meta property="og:url" content="http://iminit.github.com/page/2/index.html">
 <meta property="og:site_name" content="iminit">
 <meta property="og:description" content="Walk steps step by step">
 <meta name="twitter:card" content="summary">
@@ -85,7 +85,7 @@
   };
 </script>
 
-  <title> 归档 | iminit </title>
+  <title> iminit </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -114,7 +114,9 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,392 +217,268 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 12 篇日志。 继续努力。
-    </span>
+  <section id="posts" class="posts-expand">
 
     
 
-      
-      
+    
+    
+
+    
       
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/coding/help/" itemprop="url">
+                  一分钟入门markdown
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-18T12:05:43+08:00" content="2016-02-18">
+              2016-02-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/coding/" itemprop="url" rel="index">
+                    <span itemprop="name">coding</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/coding/help/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="coding/help/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
         </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/video/bright-pessimism-mind/" itemprop="url">
-              
-                <span itemprop="name">如何成为一个聪明的悲观主义者</span>
-              
-            </a>
+          
+            <h1 id="markdown-简明语法"><a href="#markdown-简明语法" class="headerlink" title="markdown 简明语法"></a>markdown 简明语法</h1><h2 id="基本符号"><a href="#基本符号" class="headerlink" title="基本符号"></a>基本符号</h2><ul>
+<li>*,-,+ 3个符号效果都一样，这3个符号被称为 Markdown符号</li>
+<li>空白行表示另起一个段落</li>
+<li>`是表示inline代码，tab是用来标记 代码段，分别对应html的code，pre标签</li>
+</ul>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><ul>
+<li>单一段落( &lt; p &gt;) 用一个空白行</li>
+<li>连续两个空格 会变成一个 <br></li>
+<li>连续3个符号，然后是空行，表示 hr横线</li>
+</ul>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><ul>
+<li>生成h1–h6,在文字前面加上 1–6个# 来实现</li>
+<li>文字加粗是通过 文字左右各两个符号</li>
+</ul>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ul>
+<li>在第一行加上 “&gt;”和一个空格，表示代码引用，还可以嵌套</li>
+</ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>这个是markdown文件的主要表示方式，主题要点化</p>
+<ul>
+<li>使用*,+,-加上一个空格来表示</li>
+<li>可以支持嵌套</li>
+<li>有序列表用 数字+英文点+空格来表示</li>
+<li>列表内容很长，不需要手工输入换行符，css控制段落的宽度，会自动的缩放的</li>
+</ul>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><ul>
+<li>直接写 [锚文本] (u rl”可选的title”)</li>
+<li>引用 先定义 [ref_name]:u rl，然后在需要写入url的地方， 这样使用[锚文本][r ef_name]，通常的ref_name一般用数字表示，这样显得专业</li>
+<li>简写url：用尖括号包裹url  这样生成的url锚文本就是url本身</li>
+</ul>
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><ul>
+<li>一行表示: ![a lt_text] url “可选的title”)</li>
+<li>引用表示法: ![a lt_text][id],预先定义 [id]:url “可选title”</li>
+<li>直接使用<img>标签，这样可以指定图片的大小尺寸</li>
+</ul>
+<h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><ul>
+<li>用\来转义，表示文本中的markdown符号</li>
+<li>可以在文本种直接使用html标签，但是要注意在使用的时候，前后加上空行</li>
+<li>文本前后各加一个符号，表示斜体</li>
+</ul>
+
+          
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T19:14:45+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
+    <div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
-
 
 
     
-
-      
-      
       
 
-      
-      
+  
+  
 
-      
+  
+  
+  
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/video/Face-Down/" itemprop="url">
-              
-                <span itemprop="name">奥斯卡提名奖 头朝下的生活</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T19:11:45+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/video/what is love/" itemprop="url">
-              
-                <span itemprop="name">爱是在生活的不经意之间</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/default/hello-world/" itemprop="url">
+                  Hello World
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T19:01:28+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-17T19:10:09+08:00" content="2016-02-17">
+              2016-02-17
+            </time>
+          </span>
 
-    </header>
-  </article>
+          
 
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/default/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="default/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
 
+          
 
+          
+          
+
+        </div>
+      </header>
     
 
-      
-      
-      
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/video/Taste of Home/" itemprop="url">
-              
-                <span itemprop="name">家的记忆是父母的守候</span>
-              
-            </a>
+          
+            <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+          
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T19:00:22+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
+    <div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/video/spider-net/" itemprop="url">
-              
-                <span itemprop="name">蜘蛛的网</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T18:58:41+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/video/book-happiness/" itemprop="url">
-              
-                <span itemprop="name">书虫的快乐</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T18:58:23+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/video/time-fly/" itemprop="url">
-              
-                <span itemprop="name">时间摆钟</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T18:55:43+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/video/chang-you-mind/" itemprop="url">
-              
-                <span itemprop="name">改变千万人价值观</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T18:53:23+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/video/what-2016/" itemprop="url">
-              
-                <span itemprop="name">2016年怎么过</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-07T18:51:58+08:00"
-              content="2016-03-07" >
-          03-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/coding/README/" itemprop="url">
-              
-                <span itemprop="name">NexT 精于心，简于形</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-03-04T23:04:23+08:00"
-              content="2016-03-04" >
-          03-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
 
 
     
@@ -608,6 +486,9 @@
   </section>
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 
 
 
@@ -783,12 +664,6 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
-
 
   
 
